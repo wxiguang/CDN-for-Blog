@@ -1,5 +1,5 @@
 //上线时，使用 https://www.sojson.com/javascriptobfuscator.html 对JS进行加密
-const host = "http://media.xxoojoke.com/";
+// const host = "http://media.xxoojoke.com/";
 const rain = document.getElementById('player_rain');
 const music = document.getElementById('player_music');
 const playBtn = document.getElementById('btnPlay');
@@ -50,7 +50,7 @@ function playAudio(musicId) {
 
 function setup_rain() {
     const sourceRain = document.getElementById("player_rain_source");
-    sourceRain.src = host + "tingyu/therain.m4a";
+    sourceRain.src = 'http://music.163.com/song/media/outer/url?id=' + musicId + '.mp3';
     setVolume(1);
     rain.load();
 }
