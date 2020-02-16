@@ -1,2 +1,2 @@
 # CDN-for-Blog
-CDN-for-Blog
+jsDeliver CDN-for-Blog
