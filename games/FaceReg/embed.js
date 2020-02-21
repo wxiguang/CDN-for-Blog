@@ -149,7 +149,7 @@
       resultsFrame.frameBorder = "0";
       resultsFrame.sandbox = sandboxAttrs.join(" ");
       resultsFrame.allow = "midi; geolocation; microphone; camera; encrypted-media;";
-      resultCont.appendChild(resultsFrame);
+      // resultCont.appendChild(resultsFrame);
       if (callback) {
         return resultsFrame.addEventListener("load", (function(_this) {
           return function() {
