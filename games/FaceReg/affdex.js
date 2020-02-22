@@ -33,8 +33,8 @@ function XHRWorker(url, ready, scope) {
 		}
 	}, oReq);
 	oReq.open("get", url, true);
-  oReq.setRequestHeader('Access-Control-Allow-Origin', '*');
-  oReq.setRequestHeader('Access-Control-Allow-Headers', '*');
+  // oReq.setRequestHeader('Access-Control-Allow-Origin', '*');
+  // oReq.setRequestHeader('Access-Control-Allow-Headers', '*');
 	oReq.send();
 }
 
