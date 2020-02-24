@@ -3,6 +3,7 @@ const rain = document.getElementById('player_rain');
 const music = document.getElementById('player_music');
 const playBtn = document.getElementById('btnPlay');
 let platFirst = true;
+let musicId = '17746129';
 let currentMusicId = '17746129';
 
 function playAudio(musicId) {
