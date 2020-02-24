@@ -1,5 +1,5 @@
 //上线时，使用 https://www.sojson.com/javascriptobfuscator.html 对JS进行加密
-// const host = "http://media.xxoojoke.com/";
+const host = "http://media.xxoojoke.com/";
 const rain = document.getElementById('player_rain');
 const music = document.getElementById('player_music');
 const playBtn = document.getElementById('btnPlay');
@@ -8,10 +8,10 @@ let currentMusicId = '17746129';
 
 function playAudio(musicId) {
     var domain = document.domain;
-    // if (domain !== 'rain.xxoojoke.com' && domain !== '127.0.0.1' && domain !== 'www.tingyu.pro' && domain !== 'tingyu.pro') {
-    //     alert("Load Error: please contact freetyc@foxmail.com");
-    //     return;
-    // }
+    if (domain !== 'rain.xxoojoke.com' && domain !== '127.0.0.1' && domain !== 'www.tingyu.pro' && domain !== 'tingyu.pro') {
+        alert("Load Error: please contact freetyc@foxmail.com");
+        return;
+    }
 
     if (musicId == null || musicId === '') {
         musicId = currentMusicId;
@@ -50,7 +50,7 @@ function playAudio(musicId) {
 
 function setup_rain() {
     const sourceRain = document.getElementById("player_rain_source");
-    sourceRain.src = 'http://music.163.com/song/media/outer/url?id=' + musicId + '.mp3';
+    sourceRain.src = "http://media.xxoojoke.com/tingyu/therain.m4a";
     setVolume(1);
     rain.load();
 }
