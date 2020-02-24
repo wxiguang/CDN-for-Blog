@@ -1,0 +1,130 @@
+/*
+
+name: Scrapbook
+designer: Ruan YiFeng
+designer_url: http://www.ruanyifeng.com
+description: clean and minilism.
+layouts: one-column, two-column-left, two-column-right, three-column
+
+*/
+
+/* CSS Resetting */
+ 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li, tt,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ text-align:left;
+ text-decoration:none;
+ border-bottom:none;
+ font-weight:normal;
+ font-style:normal;
+ border:none;
+ color:#111111;
+ 
+}
+
+/* Basic Styling */
+
+body {
+       margin:0;
+       padding:0;
+       background-color: #f5f5d5 ;
+       font-family: Georgia, serif;
+       letter-spacing: -0.01em;
+       word-spacing:0.2em;
+       line-height: 1.8em;
+       font-size:62.5%;
+       color:#111111;
+       width:98%;
+}
+
+body.mobile{
+    font-size: 60%;
+}
+
+body.mobile.two-columns{
+    font-size: 100%;
+}
+
+#container::before {
+  display: none;
+}
+
+@media (max-width: 30rem) {
+  body,
+  body.mobile.two-columns{
+    font-size: 60%;
+  }
+}
+
+h1{
+       font-size:2.88em;
+}
+
+h2 {
+  font-size:2.88em;
+  line-height: 1.35em;
+}
+
+body.mobile h2{
+    font-size: 2em;
+}
+
+@media (max-width: 30rem) {
+  h2{
+    font-size: 2em;
+  }
+}
+
+h3{
+       font-size:1.87em;
+}
+
+h4{
+       font-size:1.5em;
+}
+
+ul li {
+       list-style-type: square; }
+
+ol li {
+       list-style-type: decimal;
+       list-style-position:inside; }
+
+img {
+       border: 2px solid #00398a; }
+       
+strong{
+  font-weight:800; 
+}
+
+p,li{
+  font-size:1.6em;
+  line-height:220%;
+} 
+
+input,textarea{
+  font-size:1.13em;
+}
+
+select,button{
+  font-size:1.03em;
+}
+
+/* Container */
+
+#container{
+       margin: 0 auto;
+       background-color:#f5f5d5;
+       padding: 1em;
+       
+}
+
+body.one-column #container{
+       width: 65%;
