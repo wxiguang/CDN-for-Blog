@@ -45,7 +45,7 @@ function playAudio(musicId) {
 
 function setup_rain() {
     const sourceRain = document.getElementById("player_rain_source");
-    sourceRain.src = "https://cdn.jsdelivr.net/gh/wxiguang/CDN-for-Blog/games/sleepless/therain.m4a";
+    sourceRain.src = "https://cdn.jsdelivr.net/gh/wxiguang/CDN-for-Blog/games/sleepless/therain.mp3";
     setVolume(1);
     rain.load();
 }
